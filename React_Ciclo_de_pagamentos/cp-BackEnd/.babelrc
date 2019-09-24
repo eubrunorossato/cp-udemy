@@ -1,0 +1,19 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "modules": false
+            }
+        ]
+    ],
+    "sourceMaps": true,
+    "retainLines": true,
+    "env": {
+        "test": {
+            "presets": [
+                "env"
+            ]
+        }
+    }
+}

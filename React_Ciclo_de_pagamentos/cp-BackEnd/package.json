@@ -1,8 +1,8 @@
 {
   "name": "cp-BackEnd",
   "version": "1.0.0",
-  "description": "src/index.js ",
-  "main": "index.js",
+  "description": "",
+  "main": "src/index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
@@ -10,14 +10,20 @@
     "lodash": "^4.17.15",
     "mongoose": "^5.7.1",
     "mongoose-paginate": "^5.0.3",
-    "pm2": "^3.5.1"
+    "pm2": "^3.5.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/register": "^7.6.2",
     "nodemon": "^1.19.2"
   },
   "scripts": {
-    "dev": "nodemon",
-    "prod": "pm2 start src/index.js --name cp-Backend"
+    "start": "babel-node --presets env",
+    "dev": "nodemon . --exec babel-node --presets env",
+    "prod": "pm2 start src/index.js --name cp-Backend",
+    "build": "babel src -d public"
   },
   "keywords": [],
   "author": "",
