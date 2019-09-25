@@ -1,0 +1,45 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-lonely-if": "error",
+        "no-else-return": "error",
+        "no-multiple-empty-lines": [
+            1,
+            {
+                "max": 1
+            }
+        ],
+        "no-trailing-spaces": [
+            2,
+            {
+                "skipBlankLines": false
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "space-before-function-paren": [
+            "error",
+            "always"
+        ],
+        "arrow-spacing": 2,
+        "camelcase": "warn",
+        "keyword-spacing":"warn"
+    }
+}
