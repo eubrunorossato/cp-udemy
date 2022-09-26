@@ -12,7 +12,7 @@
     "lodash": "^4.17.15",
     "mongoose": "^5.7.1",
     "mongoose-paginate": "^5.0.3",
-    "pm2": "^3.5.1"
+    "pm2": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
